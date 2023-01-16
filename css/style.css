@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-main {
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+/* First Screen */
+.container-main .container-sidebar {
+    background-color: white;
+    width: 245px;
+    height: 755px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    border-right: 1px rgb(218, 216, 216) solid;
+}
+
+.container-main .container-sidebar .logo-sidebar img {
+    width: 105px;
+    height: 32px;
+    margin-top: 13px;
+    margin-left: -2px;
+}
+
+.container-main .container-sidebar .sidebar-menu {
+    height: 650px;
+    margin-top: 39px;
+}
+
+.container-main .container-sidebar .sidebar-menu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-main .container-sidebar .sidebar-menu .sidebar-top-item {
+    margin-bottom: 25px;
+}
+
+.container-main .container-sidebar .sidebar-menu i {
+    font-size: 1.3em;
+    margin-right: 16px;
+}
+
+.container-main .container-sidebar .sidebar-menu .sidebar-bottom-item {
+    margin-top: 154px;
+    margin-left: -4px;
+}
+
+.container-main .container-sidebar .sidebar-menu li.sidebar-bottom-item i.bi-list{
+    font-size: 1.7em;
+}
+
+/* Second Screen */
+.container-main .container-main-screen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #FAFAFA;
+}
+
+.container-main .container-main-screen .card-main-top {
+    margin-top: 27px;
+    margin-left: 235px;
+    width: 480px;
+    height: 115px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px rgb(218, 216, 216) solid;
+    background-color: white;
+}
+
+.container-main .container-main-screen .card-main-top .circle-img-profile {
+    margin: 0px 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgb(218, 216, 216) solid;
+}
+
+.container-main .container-main-screen .card-main-top .circle-img-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container-main .container-main-screen .card-main-top .card-main-story-top p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .container-main-screen .container-card-post-feeds {
+    width: 480px;
+    height: 931px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 235px;
+    border: 1px rgb(218, 216, 216) solid;
+    background-color: white;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px rgb(218, 216, 216) solid;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .option-post {
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-image-profile-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-image-profile-post p {
+    font-weight: 700;
+    margin-left: 6px;
+    font-size: 13px;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-card-profile-post {
+    margin: 0px 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgb(205, 12, 12) solid;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-card-profile-post img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.container-main .container-main-screen .container-card-post-feeds .container-card-img-post img {
+    height: auto;
+    width: 480px;
+}
