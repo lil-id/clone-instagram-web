@@ -15,7 +15,7 @@ body {
 }
 
 /* First Screen */
-.container-main .container-sidebar {
+.container-sidebar {
     background-color: white;
     width: 245px;
     height: 755px;
@@ -25,47 +25,53 @@ body {
     box-sizing: border-box;
     justify-content: flex-start;
     border-right: 1px rgb(218, 216, 216) solid;
+    position: fixed;
 }
 
-.container-main .container-sidebar .logo-sidebar img {
+.logo-sidebar {
+    cursor: pointer;
+}
+
+.logo-sidebar img {
     width: 105px;
     height: 32px;
     margin-top: 13px;
     margin-left: -2px;
 }
 
-.container-main .container-sidebar .sidebar-menu {
+.sidebar-menu {
     height: 650px;
     margin-top: 39px;
 }
 
-.container-main .container-sidebar .sidebar-menu li {
+.sidebar-menu li {
     list-style: none;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.container-main .container-sidebar .sidebar-menu .sidebar-top-item {
+.sidebar-top-item {
     margin-bottom: 25px;
 }
 
-.container-main .container-sidebar .sidebar-menu i {
+.sidebar-menu i {
     font-size: 1.3em;
     margin-right: 16px;
 }
 
-.container-main .container-sidebar .sidebar-menu .sidebar-bottom-item {
+.sidebar-bottom-item {
     margin-top: 154px;
     margin-left: -4px;
 }
 
-.container-main .container-sidebar .sidebar-menu li.sidebar-bottom-item i.bi-list{
+i.bi-list{
     font-size: 1.7em;
 }
 
 /* Second Screen */
-.container-main .container-main-screen {
+.container-main-screen {
+    margin-left: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -73,7 +79,7 @@ body {
     background-color: #FAFAFA;
 }
 
-.container-main .container-main-screen .card-main-top {
+.card-main-top {
     margin-top: 27px;
     margin-left: 235px;
     width: 480px;
@@ -87,7 +93,7 @@ body {
     background-color: white;
 }
 
-.container-main .container-main-screen .card-main-top .circle-img-profile {
+.circle-img-profile {
     margin: 0px 5px;
     width: 65px;
     height: 65px;
@@ -97,22 +103,24 @@ body {
     justify-content: center;
     align-items: center;
     border: 1px rgb(218, 216, 216) solid;
+    cursor: pointer;
 }
 
-.container-main .container-main-screen .card-main-top .circle-img-profile img {
+.circle-img-profile img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.container-main .container-main-screen .card-main-top .card-main-story-top p {
+.card-main-story-top p {
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.container-main .container-main-screen .container-card-post-feeds {
+.container-card-post-feeds {
     width: 480px;
     height: 931px;
     border-radius: 8px;
@@ -122,33 +130,35 @@ body {
     background-color: white;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds {
+.container-card-header-post-feeds {
     display: flex;
     justify-content: space-between;
     padding: 8px;
     border-bottom: 1px rgb(218, 216, 216) solid;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .option-post {
+.option-post {
     margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-image-profile-post {
+.container-image-profile-post {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-image-profile-post p {
+.container-image-profile-post p {
     font-weight: 700;
     margin-left: 6px;
     font-size: 13px;
+    cursor: pointer;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-card-profile-post {
+.container-card-profile-post {
     margin: 0px 5px;
     width: 42px;
     height: 42px;
@@ -160,13 +170,142 @@ body {
     border: 1px rgb(205, 12, 12) solid;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-header-post-feeds .container-card-profile-post img {
+.container-card-profile-post img {
     width: 38px;
     height: 38px;
     border-radius: 50%;
 }
 
-.container-main .container-main-screen .container-card-post-feeds .container-card-img-post img {
+.option-post {
+    cursor: pointer;
+}
+
+.container-card-img-post img {
     height: auto;
     width: 480px;
+}
+
+.container-second-sidebar {
+    margin-left: 52px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.profile-description-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.profile-description-sidebar .main-name {
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-card .profile-description-sidebar p.second-name {
+    font-size: 13px;
+    color: #8E898D;
+}
+
+.switch-account {
+    margin-left: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch-account p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0095f6;
+}
+
+.container-card-img-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-card-img-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container-suggestion-friends {
+    margin-top: 16px;
+}
+
+.container-text-suggestion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-text-suggestion p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8E898D;
+}
+
+.container-text-suggestion .option-seeall {
+    color: #151515;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.container-friends-profile {
+    margin-top: 10px;
+    display: flex;
+}
+
+.container-friends-profile .container-card-img-profile img {
+    margin-left: 3px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+.container-profile-description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.container-friends-profile .profile-second-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.container-friends-profile .profile-second-sidebar p.main-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.container-friends-profile .profile-second-sidebar p.second-name{
+    margin-top: 2px;
+    font-size: 12px;
+    color: #8E898D;
+}
+
+.container-friends-profile .follow {
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0095f6;
+    cursor: pointer;
 }
